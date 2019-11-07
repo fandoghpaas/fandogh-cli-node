@@ -29,7 +29,8 @@
     "progress": "^2.0.3",
     "request": "^2.88.0",
     "es6-dynamic-template": "^2.0.0",
-    "follow-redirects": "^1.9.0"
+    "follow-redirects": "^1.9.0",
+    "glob": "^7.1.5"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
