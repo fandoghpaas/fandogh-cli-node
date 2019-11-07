@@ -11,6 +11,8 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "cli-ux": "^5.3.2",
+    "chalk": "^2.4.2",
     "tslib": "^1",
     "inquirer": "^7.0.0",
     "ora": "^3.4.0",
@@ -22,7 +24,8 @@
     "count-files": "^2.6.2",
     "archiver": "^3.1.1",
     "walk": "^2.3.14",
-    "bytes": "^3.1.0"
+    "bytes": "^3.1.0",
+    "axios": "^0.19.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
@@ -31,6 +34,7 @@
     "globby": "^10",
     "ts-node": "^8",
     "tslint": "^5",
+    "@types/chalk": "^2.2.0",
     "typescript": "^3.3",
     "@types/inquirer": "^6.0.0",
     "@types/node-notifier": "^5.4.0",
