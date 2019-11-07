@@ -1,0 +1,56 @@
+{
+  "name": "fandogh",
+  "description": "cli tool to interact with fandogh paas",
+  "version": "0.0.1",
+  "author": "Sorena Sarabadani @Anonycoders",
+  "bin": {
+    "fandogh": "./bin/run"
+  },
+  "bugs": "https://github.com/fandoghpaas/fandogh-cli-node/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/tslint": "^3",
+    "@types/node": "^10",
+    "globby": "^10",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/fandoghpaas/fandogh-cli-node",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "fandogh",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "fandoghpaas/fandogh-cli-node",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
