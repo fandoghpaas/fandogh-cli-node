@@ -37,7 +37,7 @@ export default abstract class extends Command {
   }
 
   async init() {
-    if (get_user_config().get('collect_error', false) === null) {
+    if (get_user_config().get('collect_error', null) === null) {
       let confirm: any = await inquirer.prompt([{
         name: 'confirmed',
         message: 'Would you like to let Fandogh CLI to send context information in case any unhandled error happens?',
