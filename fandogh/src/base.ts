@@ -8,22 +8,12 @@ import {get_user_config} from "./config";
 
 const activeWin = require('active-win');
 
-export interface ConfigRepository {
-  'project'?: string,
-  'user'?: any,
-}
-
 export default abstract class extends Command {
   static description = 'fandogh command line tool';
   static flags = {
     loglevel: flags.string({options: ['error', 'warn', 'info', 'debug'], hidden: true})
   };
 
-  // setProjectConfig(config: ConfigRepository): void {
-  //   if (!config['project']) {
-  //     return
-  //   }
-  // }
 
   progress = ora({color: 'white'});
 
@@ -35,7 +25,7 @@ export default abstract class extends Command {
           notifier.notify({title, message})
         }
       }catch (e) {
-        
+
       }
     }
   }
