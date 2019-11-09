@@ -30,8 +30,12 @@ export default abstract class extends Command {
   async notifyIfNotFocused(title: string, message: string) {
     const data = await activeWin();
     if (data) {
-      if (!data.title.includes(process.title)) {
-        notifier.notify({title, message})
+      try {
+        if (data.owner['name'] !== process.env['LC_TERMINAL']) {
+          notifier.notify({title, message})
+        }
+      }catch (e) {
+        
       }
     }
   }
