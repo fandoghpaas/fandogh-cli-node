@@ -20,9 +20,9 @@ export default class Exec extends Command {
     ...Command.flags,
     help: flags.help({char: 'h'}),
     // flag with a value (-n, --name=VALUE)
-    service_name: flags.string({char: 's', description: 'service name'}),
-    replica: flags.string({char: 'r', description: 'service replica'}),
-    interactive: flags.boolean({char: 'i', default: false, type: 'boolean'})
+    service_name: flags.string({char: 's', description: 'Service name'}),
+    replica: flags.string({char: 'r', description: 'Service replica'}),
+    interactive: flags.boolean({char: 'i', default: false, type: 'boolean', description: 'Interactive shell'})
   };
 
   async run() {
