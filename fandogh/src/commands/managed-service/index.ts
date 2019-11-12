@@ -32,7 +32,7 @@ export default class Index extends Command {
       choices: command_choices,
     }]);
     switch (managed_service_command.command) {
-    case `1) fandogh volume:list => ${chalk.blueBright('deploy a managed service')}`:
+    case `1) fandogh managed_service:deploy => ${chalk.blueBright('deploy a managed service')}`:
       await Deploy.run([]);
       break;
     case `2) fandogh managed_service:help => ${chalk.blueBright('managed service help')}`:
