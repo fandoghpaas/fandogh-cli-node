@@ -25,7 +25,7 @@
     "archiver": "^3.1.1",
     "walk": "^2.3.14",
     "bytes": "^3.1.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "progress": "^2.0.3",
     "request": "^2.88.0",
     "es6-dynamic-template": "^2.0.0",
